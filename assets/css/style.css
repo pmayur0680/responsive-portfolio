@@ -1,0 +1,84 @@
+/* create custom css variables */
+:root {
+/* declare a variable with `--` syntax */
+    /* color reference http://khroma.co/generator/ */
+    --basecolor: #9793a7;
+    --accentcolor: #cdd7dd;
+}
+
+/* css element selectors */
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Below is google fonts from https://fonts.google.com/specimen/Open+Sans */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;    
+    background: var(--basecolor);
+}
+
+h1{
+    background-color: var(--accentcolor);
+    color: var(--basecolor);
+    padding: 20px 40px;    
+    margin: 0;    
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 15px;
+    color: var(--accentcolor);
+    font-size: 1.2em;    /* using em to make font-size responsive 1 em = 16 px vary by browser and screen*/
+    /* To show animated underline on mouseover link, set underline default with opacity transparent - 
+    same color as header background */
+    text-decoration: underline 0.15em rgba(49, 52, 61, 0);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;  
+}
+
+nav ul li a:hover {
+    /* To show animated underline on mouseover link, set underline with color and offset */
+    text-decoration-color: var(--accentcolor);
+    text-underline-offset: 0.4em;
+    font-weight: bold;
+}
+
+/* css class selectors */
+
+.hero {
+    background-image: url(".\assets\images\pexels-s-migaj-747964.jpg");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+/* css media query */
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
