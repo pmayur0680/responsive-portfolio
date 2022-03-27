@@ -2,8 +2,8 @@
 :root {
 /* declare a variable with `--` syntax */
     /* color reference http://khroma.co/generator/ */
-    --basecolor: #9793a7;
-    --accentcolor: #cdd7dd;
+    --basecolor: #3e7184;
+    --accentcolor: #bed5ba;
 }
 
 /* css element selectors */
@@ -33,6 +33,10 @@ header h1{
     color: var(--basecolor);
     padding: 20px 40px;    
     margin: 0;    
+}
+h2 {    
+    text-align: center;
+    color: var(--basecolor);
 }
 header nav ul {
     display: flex;
@@ -82,17 +86,11 @@ section header {
     flex: 1 1 0;
     /* margin: 0;           */
     width: 20%;    
-    border-right: 3px solid var(--basecolor);     
-}
-
-section p {        
-    margin: 0;
-    padding: 10px;
 }
 
 /* css class selectors */
 .hero {
-    background-image: url("./assets/images/background.jpg");
+    background-image: url("../../assets/images/background.jpg");
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,15 +100,63 @@ section p {
 
 section .content {    
     width: 80%;
+    padding: 10px;
+    border-left: 3px solid var(--basecolor);     
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+.card {
+    flex: 1 0 auto;
+    background-color: var(--accentcolor);
+    width: 300px;    
+    height: 200px;
+    font-size: 150%;        
+    line-height: 200px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid var(--basecolor);
+    border-radius: 5px;       
+    margin: 5px;     
+}
 .contact ul {
     display: flex;
     justify-content: space-evenly;
-    font-size: 120%;    
+    font-size: 130%;        
     list-style: none;
+    text-decoration: none;    
 }
 
+.contact ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.contact ul li a:link {
+    color: var(--basecolor);
+}
+
+.contact ul li a:visited {
+    color: #649888;d
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}  
+
+.contact ul li a:active {
+    color: red;
+}    
+
+.contactphone::before {
+    content: ' \2706';    
+    display: inline-block;
+    margin-right: 5px;
+}
 
 /* css media query  */
 /* Screen sizes and breakpoints
@@ -123,6 +169,10 @@ Small: up to 640 px, Medium 641 - 1007px, Large 1008ps and up
         line-height: 2.5em;        
         align-items: center;
     }  
+    .mainskill {
+        height: 150px;  
+        padding: 75px;            
+      }
     
 }
 
@@ -151,6 +201,7 @@ Small: up to 640 px, Medium 641 - 1007px, Large 1008ps and up
     }
     section .content {    
         width: 100%;
+        border-left: none;
     }
     .contact ul {
         display: block;        
