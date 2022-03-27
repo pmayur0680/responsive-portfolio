@@ -7,6 +7,9 @@
 }
 
 /* css element selectors */
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -14,6 +17,7 @@ body {
     /* Below is google fonts from https://fonts.google.com/specimen/Open+Sans */
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+    margin: 0;    
 }
 
 header {
@@ -24,25 +28,24 @@ header {
     background: var(--basecolor);
 }
 
-h1{
+header h1{
     background-color: var(--accentcolor);
     color: var(--basecolor);
     padding: 20px 40px;    
     margin: 0;    
 }
-
-nav ul {
+header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;    
+    padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
 }
 
-nav ul li a {
-    padding: 15px;
+header nav ul li a {
+    padding: 14px 20px;
     color: var(--accentcolor);
     font-size: 1.2em;    /* using em to make font-size responsive 1 em = 16 px vary by browser and screen*/
     /* To show animated underline on mouseover link, set underline default with opacity transparent - 
@@ -52,17 +55,44 @@ nav ul li a {
     transition: text-decoration-color 300ms, text-underline-offset 300ms;  
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     /* To show animated underline on mouseover link, set underline with color and offset */
     text-decoration-color: var(--accentcolor);
     text-underline-offset: 0.4em;
     font-weight: bold;
 }
 
-/* css class selectors */
+main {
+    display: flex;
+    flex-direction: column;    
+}
 
+section {
+    display: flex;
+    margin: 5px 0 0;    
+    align-items: flex-start;       
+}
+
+section header {
+    background-color: #fff;    
+    color: var(--basecolor);
+    padding: 20px 40px;        
+    font-size: 200%;    
+    font-weight: bold;        
+    flex: 1 1 0;
+    /* margin: 0;           */
+    width: 20%;    
+    border-right: 3px solid var(--basecolor);     
+}
+
+section p {        
+    margin: 0;
+    padding: 10px;
+}
+
+/* css class selectors */
 .hero {
-    background-image: url(".\assets\images\pexels-s-migaj-747964.jpg");
+    background-image: url("./assets/images/background.jpg");
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,15 +100,63 @@ nav ul li a:hover {
     background-position: center;
 }
 
-/* css media query */
+section .content {    
+    width: 80%;
+}
 
-@media screen and (max-width: 768px) {
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 120%;    
+    list-style: none;
+}
+
+
+/* css media query  */
+/* Screen sizes and breakpoints
+Small: up to 640 px, Medium 641 - 1007px, Large 1008ps and up
+ */
+@media screen and (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2.5em;        
+        align-items: center;
+    }  
+    
+}
+
+@media screen and (max-width: 1007px) {
     header {
-      flex-direction: column;
+      flex-direction: column;                
+    }   
+    header h1, nav {
+        margin: 0 auto;
     }
-  
-    main {
-      max-width: 1200px;
+    section {        
+        flex-direction: column;        
+    }    
+    main section {
+        flex-wrap: wrap;
     }
-  }
-  
+    section header {
+        border: none;
+        width: 100%;
+        align-items: flex-start;
+        padding: 10px;
+        text-decoration: underline;
+    }    
+    section header {
+        width: 100%;
+    }
+    section .content {    
+        width: 100%;
+    }
+    .contact ul {
+        display: block;        
+    }
+    .contact ul li {
+        padding: 10px;        
+    }
+     
+}
