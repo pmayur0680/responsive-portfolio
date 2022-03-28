@@ -10,4 +10,4 @@ Placeholder used for work will up updated in upcoming weeks.
 - [Khroma - The AI color tool for designers](http://khroma.co/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [W3Schools](https://www.w3schools.com/css/)
-- [Stack Overflow] (https://stackoverflow.com/)
+- [Stack Overflow](https://stackoverflow.com/)
