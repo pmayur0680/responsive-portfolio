@@ -93,6 +93,10 @@ h2 {
     color: var(--basecolor);
 }
 
+footer {     
+    margin: 0 auto;
+}
+
 /* css class selectors */
 
 .hero {
@@ -153,7 +157,7 @@ section .content {
 .contact ul {
     display: flex;
     justify-content: space-evenly;
-    font-size: 130%;        
+    font-size: 110%;        
     list-style: none;
     text-decoration: none;    
 }
@@ -180,10 +184,7 @@ section .content {
     color: red;
 }    
 
-.contactphone::before {
-    content: ' \2706';    
-    display: inline-block;
-}
+
 
 /* css media query  */
 /* Screen sizes and breakpoints
