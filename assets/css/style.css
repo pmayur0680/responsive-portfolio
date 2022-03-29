@@ -108,6 +108,7 @@ footer {
     background-position: center;    
     position: relative;
 }
+
 .hero-text {
     text-align: center;    
     position: absolute;
@@ -154,6 +155,33 @@ section .content {
     flex: 1 0 auto;
 }
 
+.html {
+    background-image: url("../../assets/images/html5.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    background-position: center;    
+    position: relative;
+}
+
+.css {
+    background-image: url("../../assets/images/css.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-position: center;    
+    position: relative;
+}
+
+.javascript {
+    background-image: url("../../assets/images/javascript.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-position: center;    
+    position: relative;
+}
+
 .contact ul {
     display: flex;
     justify-content: space-evenly;
@@ -173,7 +201,7 @@ section .content {
 }
 
 .contact ul li a:visited {
-    color: #649888;d
+    color: #649888;
 }
 
 .contact ul li a:hover {
@@ -184,8 +212,15 @@ section .content {
     color: red;
 }    
 
+.phone::before {
+    content: "\2706";
+    display: inline-block;
+}
 
-
+.email::before {
+    content: "\2709";
+    display: inline-block;
+}
 /* css media query  */
 /* Screen sizes and breakpoints
 Small: up to 640 px, Medium 641 - 1007px, Large 1008ps and up
