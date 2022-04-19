@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Below is google fonts from https://fonts.google.com/specimen/Open+Sans */
-    font-family: 'Open Sans', sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 100%;
     margin: 0;    
 }
@@ -155,28 +155,31 @@ section .content {
     flex: 1 0 auto;
 }
 
-.html {
-    background-image: url("../../assets/images/html5.jpg");    
+.project-stock-simulator {
+    background-image: url("../../assets/images/project-stock-simulator.png");    
     background-repeat: no-repeat;
     background-size: cover;
-    height: 380px;
+    height: 500px;
+    cursor: pointer;
     background-position: center;    
     position: relative;
 }
 
-.css {
-    background-image: url("../../assets/images/css.png");    
+.project-weather-dashboard {
+    background-image: url("../../assets/images/project-weather-dashboard.png");    
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
     height: 250px;
     background-position: center;    
     position: relative;
 }
 
-.javascript {
-    background-image: url("../../assets/images/javascript.png");    
+.project-workday-scheduler {
+    background-image: url("../../assets/images/project-work-day-scheduler.png");        
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
     height: 250px;
     background-position: center;    
     position: relative;
@@ -232,6 +235,10 @@ Small: up to 640 px, Medium 641 - 1007px, Large 1008ps and up
         line-height: 2.5em;        
         align-items: center;
     }      
+    .project-stock-simulator {
+        background-image: url("../../assets/images/project-stock-simulator-mobile.png");            
+    }
+    
     
 }
 
