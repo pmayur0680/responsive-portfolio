@@ -123,6 +123,12 @@ footer {
 section .content {    
     width: 80%;
     padding: 10px;
+    border-left: 3px solid var(--basecolor);         
+}
+
+section .workcontent {    
+    width: 80%;
+    padding: 10px;
     border-left: 3px solid var(--basecolor);     
     text-align: center;
 }

@@ -5,7 +5,7 @@ I am currently enrolled in full stack Coding Boot Camp at UT Austin, with newly 
 Code Repo: https://github.com/pmayur0680/Professional-Portfolio<br>
 Live Site: https://pmayur0680.github.io/Professional-Portfolio/
 ## Screenshots
-![Alt text](https://user-images.githubusercontent.com/101486770/162600731-297904e5-8724-4d36-97f3-f0f6b9bca28d.pngg?raw=true "Weather Dashboard")
+![Alt text](https://user-images.githubusercontent.com/101486770/164240424-b9fcc3cd-aeca-4f5f-8929-510c10f17585.png?raw=true "Professional Portfolio")
 ## Acknowledgments
 - [Khroma - The AI color tool for designers](http://khroma.co/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
