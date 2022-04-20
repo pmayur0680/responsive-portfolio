@@ -124,42 +124,57 @@ section .content {
     width: 80%;
     padding: 10px;
     border-left: 3px solid var(--basecolor);     
+    text-align: center;
 }
 
-.cards {
+.cards{
     display: flex;
     flex-wrap: wrap;    
     justify-content: center;
 }
 
+.projects {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+.project {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
 .card {
     flex: 1 0 auto;
-    /* background-color: var(--accentcolor); */
-    background-image: linear-gradient(to right, rgba(190,213,186,0), rgba(62,113,132,1));
+    text-align: center;
+    background-color: var(--accentcolor); 
+    background-image: linear-gradient(to right, rgba(190,213,186,0), rgba(62,113,132,1)); 
     width: 300px;    
     height: 200px;
     font-size: 150%;        
-    line-height: 200px;
-    text-align: center;
+    line-height: 200px;    
     font-weight: bold;
     border: 2px solid var(--basecolor);
     border-radius: 5px;       
-    margin: 5px;     
+    margin: 5px;    
 }
 
-.cards :first-child {
+.textcenter {
+    text-align: center;
+}
+/* .cards :first-child {
     width: 100%;
   }
 
 .card > * {
     flex: 1 0 auto;
-}
+} */
 
 .project-stock-simulator {
     background-image: url("../../assets/images/project-stock-simulator.png");    
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 500px;    
     cursor: pointer;
     background-position: center;    
     position: relative;

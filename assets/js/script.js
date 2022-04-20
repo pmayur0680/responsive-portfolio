@@ -4,17 +4,17 @@ var projectWorkDaySchedulerEl = document.querySelector(".project-workday-schedul
 
 // Project - Stock Simulator link
 projectStockSimulatorEl.addEventListener("click", function() {
-    window.open('https://github.com/yummy314159265/StockMarketSimulator');
+    window.open('https://yummy314159265.github.io/StockMarketSimulator/');
 });
 
 // Project - Weather Dashboard link
 
 projectWeatherDashboardEl.addEventListener("click", function() {
-    window.open('https://github.com/pmayur0680/Weather-Dashboard');
+    window.open('https://pmayur0680.github.io/Weather-Dashboard/');
 });
 
 // Project - Work Day Scheduler link
 
 projectWorkDaySchedulerEl.addEventListener("click", function() {
-    window.open('https://github.com/pmayur0680/Work-Day-Scheduler');
+    window.open('https://pmayur0680.github.io/Work-Day-Scheduler/');
 });
