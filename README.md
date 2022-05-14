@@ -9,5 +9,3 @@ Live Site: https://pmayur0680.github.io/Professional-Portfolio/
 ## Acknowledgments
 - [Khroma - The AI color tool for designers](http://khroma.co/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [W3Schools](https://www.w3schools.com/css/)
-- [Stack Overflow](https://stackoverflow.com/)
